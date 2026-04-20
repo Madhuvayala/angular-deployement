@@ -1,0 +1,25 @@
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    background-color:var(--secondary);
+    color: #fff;
+    padding: 24px;
+    position: fixed;
+    
+}
+.sidebar h2{
+    margin-bottom: 30px;
+}
+.sidebar a{
+    padding: 12px;
+    display: flex;
+    color: #cbd5f5;
+    text-decoration: none;
+    border-radius:6px;
+    margin-bottom: 8px;
+}
+
+.sidebar a:hover{
+    background-color: rgb(255,255,blue255,0.1);
+    color: white;
+}

@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <h1>colour Picker App</h1>
     <input type="color" [value]="selectedColor()" (input)="updateColor($event.target.value)">
 
@@ -7,4 +7,11 @@
         XEX Code: <b>{{ selectedColor() }}</b>
     </p>
     <button (click)="copyColor()">Copy Color</button>
+</div> -->
+<div class="layout">
+<app-sidebar></app-sidebar>
+<div class="content">
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+</div>
 </div>

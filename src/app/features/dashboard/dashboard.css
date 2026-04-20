@@ -1,0 +1,18 @@
+.dasboard{
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+}
+.card{
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+.card p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #3b82f6;
+}

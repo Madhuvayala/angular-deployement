@@ -1,0 +1,25 @@
+<h2>Employee List</h2>
+
+<table>
+    <thead>
+        <tr>
+
+            <th>Name</th>
+            <th>Email</th>
+            <th>Position</th>
+            <th>Department</th>
+
+        </tr>
+    </thead>
+
+    @for(emp of employees();track emp.id){
+    <tbody>
+        <tr>
+            <td>{{emp.name}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.position}}</td>
+            <td>{{emp.department}}</td>
+        </tr>
+    </tbody>
+    }
+</table>

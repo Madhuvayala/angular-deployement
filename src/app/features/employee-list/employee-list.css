@@ -1,0 +1,23 @@
+h2{
+    padding:24px;
+    text-align:center;
+}
+table{
+    width:82vw;
+    margin:0 24px ;
+    border-collapse:collapse ;
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+  
+    
+}
+  th,td{
+        padding: 14px;
+        text-align: left;
+        border-bottom: 1px solis var(--border);
+    }
+    th{
+        background: #f8f1fc;
+        color: var(--text-light);
+    }
