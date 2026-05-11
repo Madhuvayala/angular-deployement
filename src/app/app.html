@@ -8,6 +8,7 @@
     </p>
     <button (click)="copyColor()">Copy Color</button>
 </div> -->
+@if(!isSideNavbarRoute()){
 <div class="layout">
 <app-sidebar></app-sidebar>
 <div class="content">
@@ -15,3 +16,6 @@
     <router-outlet></router-outlet>
 </div>
 </div>
+}@else{
+<router-outlet></router-outlet>
+}

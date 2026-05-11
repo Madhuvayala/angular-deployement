@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <button mat-icon (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+   
+   <div class="logo">Logo</div>
+   <div class="extra"></div>
+   <mat-icon>share</mat-icon>
+</mat-toolbar>
+
+  <!-- class="example-container" mode="side"-->
+  <mat-sidenav-container class="sidenav-wrapper">
+    <mat-sidenav  opened #nav>Home</mat-sidenav>
+    <mat-sidenav-content>content</mat-sidenav-content>
+  </mat-sidenav-container>

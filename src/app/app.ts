@@ -1,16 +1,21 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { forkJoin, of } from 'rxjs';
 import { Sidebar } from './core/layout/sidebar/sidebar';
 import { Navbar } from './core/layout/navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Sidebar,Navbar],
+  imports: [RouterOutlet, Sidebar, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+ constructor(public route: Router) {}
+
+  isSideNavbarRoute(): boolean {
+    return this.route.url === '/side-navbar';
+  }
   // dataUsers=of(([
   //   { id: 1, name: 'Alice' },
   //   { id: 2, name: 'Bob' },

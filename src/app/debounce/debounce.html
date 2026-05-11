@@ -1,0 +1,15 @@
+
+<div style="margin-top: 20px;">
+<input type="text" [formControl]="searchControl" placeholder="Search Users"/>
+<ul>
+    <!-- <li *ngFor="let user of users()">
+        {{user.name}}
+    </li> -->
+    @for(user of users(); track user.id){
+        <li>
+            {{user.name}}
+        </li>
+    }
+</ul>
+</div>
+
